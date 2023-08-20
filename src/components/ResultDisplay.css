@@ -1,0 +1,16 @@
+.result-container {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  .result-text {
+    font-size: 24px;
+    font-weight: bold;
+  }

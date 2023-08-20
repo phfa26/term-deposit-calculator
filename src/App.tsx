@@ -1,26 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Form from './components/Form';
+import ResultDisplay from './components/ResultDisplay';
+import { TermDepositResults, termDepositCalculator } from './utils/TermDepositCalculator';
 import './App.css';
 
-function App() {
+const App: React.FC = () => {
+  const [results, setResults] = useState<TermDepositResults | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+  const calculateTermDeposit = (
+    startingPrincipal: number,
+    yearlyInterestRate: number,
+    term: number,
+    isMonths: boolean,
+    interestFrequency: string,
+  ) => {
+    const valuesToCheck = [startingPrincipal, yearlyInterestRate, term];
+  
+    if (valuesToCheck.some(value => isNaN(value) || value <= 0)) {
+      setError('All values must be positive numbers greater than 0');
+      setResults(null);
+    } else {
+      setError(null);
+      const calculatedResults = termDepositCalculator(
+        startingPrincipal,
+        yearlyInterestRate,
+        term,
+        isMonths,
+        interestFrequency,
+      );
+      setResults(calculatedResults);
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Savings Calculator</h1>
+      <Form calculateResult={calculateTermDeposit} setError={setError} />
+      {error ? <p className='error-message'>{error}</p> : <ResultDisplay results={results} /> }      
     </div>
   );
-}
+};
 
 export default App;

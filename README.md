@@ -1,6 +1,35 @@
-# Getting Started with Create React App
+# Term Deposits - Savings Calculator App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ Welcome to the Savings Calculator App!\
+ This React application helps you calculate your projected savings based on various parameters such as principal amount, interest rate, duration, and interest frequency.
+ 
+Before you begin, please make sure you have npm (Node Package Manager) installed on your system. If you don't have it installed, you can download it from the official Node.js website: [Node.js Download Page](https://nodejs.org/en/download/).
+
+
+## Getting Started
+
+To run this app locally on your machine, follow these steps:
+
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/phfa26/term-deposit-calculator.git
+
+2. **Navigate to the Project Folder**:
+
+   ```bash
+   cd savings-calculator-app
+   
+3. **Install Dependencies**:
+
+   ```bash
+   npm install
+   
+4. **Start the Development Server**:
+
+   ```bash
+   npm start
+
 
 ## Available Scripts
 
@@ -27,20 +56,9 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Credits
+This app was created by **[Paulo Amaral](https://www.pauloamaral.com.au)**.\
+Feel free to contribute, report issues, or provide feedback!
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+This project is licensed under the MIT License.
