@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/term-deposit-calculator/static/css/main.6ec3d713.css",
+    "main.js": "/term-deposit-calculator/static/js/main.37b80026.js",
+    "static/js/787.5d17bd81.chunk.js": "/term-deposit-calculator/static/js/787.5d17bd81.chunk.js",
+    "index.html": "/term-deposit-calculator/index.html",
+    "main.6ec3d713.css.map": "/term-deposit-calculator/static/css/main.6ec3d713.css.map",
+    "main.37b80026.js.map": "/term-deposit-calculator/static/js/main.37b80026.js.map",
+    "787.5d17bd81.chunk.js.map": "/term-deposit-calculator/static/js/787.5d17bd81.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ec3d713.css",
+    "static/js/main.37b80026.js"
+  ]
+}
