@@ -5,6 +5,8 @@
  
 Before you begin, please make sure you have npm (Node Package Manager) installed on your system. If you don't have it installed, you can download it from the official Node.js website: [Node.js Download Page](https://nodejs.org/en/download/).
 
+## Live App
+[Click here](https://phfa26.github.io/term-deposit-calculator/)
 
 ## Getting Started
 
