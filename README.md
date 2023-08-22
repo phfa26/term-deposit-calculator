@@ -64,6 +64,5 @@ Feel free to contribute, report issues, or provide feedback!
 
 ## License
 This project is licensed under the MIT License.
-
-##Build and Test - Status
+\
 [![Build and Test](https://github.com/phfa26/term-deposit-calculator/actions/workflows/build-test.yml/badge.svg)](https://github.com/phfa26/term-deposit-calculator/actions/workflows/build-test.yml)
